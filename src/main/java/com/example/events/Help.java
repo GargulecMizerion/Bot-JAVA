@@ -12,7 +12,11 @@ public class Help extends ListenerAdapter
         String messageSent = event.getMessage().getContentRaw();
 
         if (messageSent.equalsIgnoreCase("!help")){
-            event.getChannel().sendMessage("!joke - sypnij żartem brachu\n!hello - przywitaj sie \n!owner - zawołaj własciciela").queue();
+            event.getChannel().sendMessage("!joke - sypnij żartem brachu" +
+                    "\n!hello - przywitaj sie " +
+                    "\n!owner - zawołaj własciciela " +
+                    "\n!join - dodaj bota na kanał dzwiękowy" +
+                    "\n!play - uruchom muzykę").queue();
         }
 
     }
